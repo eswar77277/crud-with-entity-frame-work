@@ -9,11 +9,21 @@ namespace curdwithef
 {
     public partial class list : System.Web.UI.Page
     {
+       int rq;
         CURDEGEntities db = new CURDEGEntities();
         List<gETUSERS_Result> listt = new List<gETUSERS_Result>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Bind();
+             rq = Convert.ToInt16(Request.QueryString["id"]);
+            if (rq == 0)
+            {
+                Bind();
+            }
+            else if (rq != 0)
+            {
+                db.DEL_USER(iD: rq);
+                Bind();
+            }
         }
 
         public void Bind()
