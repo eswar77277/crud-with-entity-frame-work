@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CURDEGModelStoreContainer" CdmEntityContainer="CURDEGEntities">
+    <FunctionImportMapping FunctionImportName="DEL_USER" FunctionName="CURDEGModel.Store.DEL_USER" />
+    <FunctionImportMapping FunctionImportName="gETUSERS" FunctionName="CURDEGModel.Store.gETUSERS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CURDEGModel.gETUSERS_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="INSERTUSER" FunctionName="CURDEGModel.Store.INSERTUSER" />
+    <FunctionImportMapping FunctionImportName="UPDATEUSER" FunctionName="CURDEGModel.Store.UPDATEUSER" />
+  </EntityContainerMapping>
+</Mapping>
