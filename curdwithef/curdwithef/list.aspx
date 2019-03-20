@@ -27,7 +27,7 @@
                     <asp:TemplateField>
                         <ItemTemplate>
                            <a href="editform.aspx?id=<%# Eval("ID")%>">Edit</a>
-                            <a href="editform.aspx?id=<%# Eval("ID")%>">Delete</a>
+                            <a href="list.aspx?id=<%# Eval("ID")%>">Delete</a>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
